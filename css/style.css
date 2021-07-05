@@ -65,17 +65,17 @@ header.main-header .region.region-header {
 }
 
 /* User account menu */
-nav#block-ronferguson-zymphonies-account-menu ul.menu {
+nav[id*=block-ronferguson-zymphonies-][id$=account-menu] ul.menu {
   list-style-position: outside;
 }
-nav#block-ronferguson-zymphonies-account-menu ul.menu li {
+nav[id*=block-ronferguson-zymphonies-][id$=account-menu] ul.menu li {
   display: inline-block;
   margin-right: 1.8em;
 }
-nav#block-ronferguson-zymphonies-account-menu ul.menu li:last-of-type {
+nav[id*=block-ronferguson-zymphonies-][id$=account-menu] ul.menu li:last-of-type {
   margin-right: 0;
 }
-nav#block-ronferguson-zymphonies-account-menu ul.menu li:after {
+nav[id*=block-ronferguson-zymphonies-][id$=account-menu] ul.menu li:after {
   content: " ";
   display: inline-block;
 }
