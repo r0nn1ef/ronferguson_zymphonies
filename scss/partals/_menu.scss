@@ -1,5 +1,5 @@
 /* User account menu */
-nav#block-ronferguson-zymphonies-account-menu {
+nav[id*='block-ronferguson-zymphonies-'][id$='account-menu'] {
   ul.menu {
     //list-style-type: none;
     list-style-position: outside;
