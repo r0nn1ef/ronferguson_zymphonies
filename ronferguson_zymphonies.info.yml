@@ -14,6 +14,7 @@ libraries:
 regions:
 
   #Header
+  slideshow: 'Slideshow'
   header: 'Header'
   contact_email: 'Contact email'
   top_menu: 'Top menu'

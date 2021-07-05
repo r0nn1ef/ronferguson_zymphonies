@@ -79,3 +79,7 @@ nav[id*=block-ronferguson-zymphonies-][id$=account-menu] ul.menu li:after {
   content: " ";
   display: inline-block;
 }
+
+#block-views-block-front-page-slideshow-block-1-2 {
+  margin: 0 0 0 0 !important;
+}

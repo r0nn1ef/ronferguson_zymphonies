@@ -1,6 +1,31 @@
 <?php
 
 use Drupal\Core\Template\Attribute;
+use Drupal\media\Entity\Media;
+use Drupal\file\Entity\File;
+
+function ronferguson_zymphonies_theme_preprocess_page(&$variables) {
+
+}
+
+function ronferguson_zymphonies_preprocess_node( &$variables ) {
+
+  /**
+   * @var \Drupal\node\NodeInterface;
+   */
+  $entity = $variables['node'];
+  if ( $entity->bundle() == 'slide' && $variables['view_mode'] == 'slide' ) {
+
+    $variables['content']['title'] = $entity->label();
+    if ( isset($_GET['debug']) ) {
+      header('content-type:text/plain');
+      var_dump( array_keys( (array)$variables['content']['field_slide_url']['#items'] ) );
+      exit;
+    }
+
+  }
+
+}
 
 function ronferguson_zymphonies_preprocess_menu(&$variables, $hook) {
   if (isset($variables['items']['user.page']) && !is_null($variables['items']['user.page'])) {
@@ -19,4 +44,8 @@ function ronferguson_zymphonies_preprocess_menu(&$variables, $hook) {
     }
     $variables['items']['user.logout']['fa_attributes']->addClass('fa-li', 'fa', $icon_class);
   }
+}
+
+function ronferguson_zymphonies_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  unset( $form['base_zymphonies_theme_settings']['slideshow'] );
 }
