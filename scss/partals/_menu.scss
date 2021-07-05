@@ -1,0 +1,22 @@
+/* User account menu */
+nav#block-ronferguson-zymphonies-account-menu {
+  ul.menu {
+    //list-style-type: none;
+    list-style-position: outside;
+
+    li {
+      //list-style-type: none;
+      display: inline-block;
+      margin-right: 1.8em;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &:after {
+        content: " ";
+        display: inline-block;
+      }
+    }
+  }
+}

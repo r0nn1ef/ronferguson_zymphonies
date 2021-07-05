@@ -1,0 +1,57 @@
+name: Ron Ferguson's Zymphonies Theme
+type: theme
+description: 'Personalized sub-theme for Base Zymphonies Theme.'
+package: core
+base theme: base_zymphonies_theme
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+#Libraries
+libraries:
+  - ronferguson_zymphonies/global-styling
+
+#Regions
+regions:
+
+  #Header
+  header: 'Header'
+  contact_email: 'Contact email'
+  top_menu: 'Top menu'
+  primary_menu: 'Primary menu'
+  search: 'Search'
+  breadcrumb: 'Breadcrumb'
+
+  #Address
+  address: 'Address'
+
+  #Home page
+  homepagemessage: 'Home page message'
+  topwidget_first: 'Top first widget'
+  topwidget_second: 'Top second widget'
+  topwidget_third: 'Top third widget'
+
+  #Global region
+  highlighted: 'Highlighted'
+  page_title: 'Page title'
+  content: 'Content'
+  sidebar_first: 'Left sidebar'
+  sidebar_second: 'Right sidebar'
+
+  #Bottom widgets
+  bottom_first: 'Bottom first widget'
+  bottom_second: 'Bottom second widget'
+  bottom_third: 'Bottom third widget'
+  bottom_forth: 'Bottom forth widget'
+
+  #Footer widgets
+  footer_first: 'Footer first widget'
+  footer_second: 'Footer second widget'
+  footer_third: 'Footer third widget'
+
+  #Footer
+  footer_menu: 'Footer menu'
+  google_map: 'Google map'
+  auto_hidden_block: 'Auto hidden blocks'
+
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'

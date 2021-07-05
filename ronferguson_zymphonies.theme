@@ -1,0 +1,22 @@
+<?php
+
+use Drupal\Core\Template\Attribute;
+
+function ronferguson_zymphonies_preprocess_menu(&$variables, $hook) {
+  if (isset($variables['items']['user.page']) && !is_null($variables['items']['user.page'])) {
+    if (!is_object($variables['items']['user.page']['fa_attributes'])) {
+      $variables['items']['user.page']['fa_attributes'] = new Attribute();
+    }
+    $variables['items']['user.page']['fa_attributes']->addClass('fa-li', 'fa', 'fa-user');
+  }
+  if (isset($variables['items']['user.logout']) && !is_null($variables['items']['user.logout'])) {
+    if (!is_object($variables['items']['user.logout']['fa_attributes'])) {
+      $variables['items']['user.logout']['fa_attributes'] = new Attribute();
+    }
+    $icon_class = 'fa-unlock';
+    if (\Drupal::currentUser()->isAnonymous()) {
+      $icon_class = 'fa-lock';
+    }
+    $variables['items']['user.logout']['fa_attributes']->addClass('fa-li', 'fa', $icon_class);
+  }
+}

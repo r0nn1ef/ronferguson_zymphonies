@@ -1,0 +1,68 @@
+/* Override the default body font. */
+body, table td {
+  font-family: $body_font !important;
+}
+
+body {
+  background-image: url("../images/body_bg.jpg") !important;
+}
+
+h1, h2, h3, h4, h5, h6, table th {
+  font-family: $heading_font !important;
+}
+
+q, blockquote {
+  margin: 8px 30px !important;
+  background-color: $grey2 !important;
+  padding: 0.6em 0.3em !important;
+  font-size: 2.2em !important;
+  line-height: 1.2em !important;
+  border-radius: 0.3em;
+  p {
+    color: $grey4;
+
+    &:before {
+      content: "\201C";
+    }
+    &:after {
+      content: "\201D";
+    }
+  }
+}
+
+table {
+  caption {
+    font-family: $body_font;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.125em;
+    padding-top: 0.6em;
+    padding-bottom: 0.1em;
+    color: $grey4;
+  }
+
+  tr {
+
+    &.odd {
+      background-color: $grey1;
+    }
+
+    &.even {
+      background-color: $grey2;
+    }
+
+    th {
+
+    }
+    td {
+
+    }
+  }
+}
+
+/* Front page overrides */
+.path-frontpage {
+  .content_layout {
+    text-align: left !important;
+  }
+}
