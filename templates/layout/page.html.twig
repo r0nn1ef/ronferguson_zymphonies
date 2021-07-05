@@ -89,13 +89,9 @@
 
 <!-- Start: Slider -->
   {% if is_front and show_slideshow%}
-    <div class="flexslider">
-      <ul class="slides">
-        {% for slider_contents in slider_content %}
-          {{ slider_contents | raw }}
-        {% endfor %}
-      </ul>
-    </div>
+    {% if page.slideshow %}
+      {{ page.slideshow }}
+    {% endif %}
   {% endif %}
 <!-- End: Slider -->
 
