@@ -87,13 +87,13 @@
 {% endif %}
 
 
-<!-- Start: Slider -->
-  {% if is_front and show_slideshow%}
-    {% if page.slideshow %}
-      {{ page.slideshow }}
-    {% endif %}
-  {% endif %}
-<!-- End: Slider -->
+
+{% if page.slideshow %}
+  <!-- Start: Slider -->
+  {{ page.slideshow }}
+  <!-- End: Slider -->
+{% endif %}
+
 
 
 <header class="main-header">
