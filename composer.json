@@ -1,0 +1,20 @@
+{
+  "name": "drupal/ronferguson_zymphonies",
+  "type": "drupal-custom-theme",
+  "description": "Personalized sub-theme for Base Zymphonies Theme.",
+  "keywords": ["Drupal", "theme", "subtheme"],
+  "homepage": "https://github.com/r0nn1ef/ronferguson_zymphonies",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "repositories": { },
+  "require": {
+    "drupal/font_awesome" : "^1.4",
+    "drupal/base_zymphonies_theme" : "^2.0"
+  },
+  "extra": {
+    "branch-alias": {
+      "8.x-1.x": "1.x-dev"
+    },
+    "patches": {}
+  }
+}
