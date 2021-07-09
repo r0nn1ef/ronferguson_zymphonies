@@ -14,7 +14,7 @@ function ronferguson_zymphonies_preprocess_node( &$variables ) {
    * @var \Drupal\node\NodeInterface;
    */
   $entity = $variables['node'];
-  if ( $entity->bundle() == 'slide' && $variables['view_mode'] == 'slide' ) {
+  if ( $entity->bundle() == 'slide' ) {
 
     $variables['content']['title'] = $entity->label();
     if ( isset($_GET['debug']) ) {
