@@ -54,6 +54,10 @@ table tr.even {
 /*
  * This contains overrides for the FontAwesome library.
  */
+.fa-ul > li {
+  list-style-type: none;
+}
+
 .fa-li {
   top: 0.275em !important;
   left: -1.75em !important;
