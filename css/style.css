@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=PT+Sans+Caption:wght@400;700&display=swap");
 /* Override the default body font. */
+@import "../css/icomoon/style.css";
 body, table td {
   font-family: "Crimson Text", serif !important;
 }
