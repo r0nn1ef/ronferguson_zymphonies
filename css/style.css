@@ -69,6 +69,11 @@ header.main-header .region.region-header {
   padding-top: 2em;
 }
 
+/* Front page specific styles. */
+.path-frontpage [class*=region-topwidget-] .term-description {
+  min-height: 150px;
+}
+
 /* User account menu */
 nav[id*=block-ronferguson-zymphonies-][id$=account-menu] ul.menu {
   list-style-position: outside;
