@@ -20,7 +20,7 @@ q, blockquote {
   padding: 0.6em 0.3em !important;
   font-size: 2.2em !important;
   line-height: 1.2em !important;
-  border-radius: 0.3em;
+  border-radius: 0.1em;
 }
 q p, blockquote p {
   color: #666;
@@ -69,9 +69,16 @@ header.main-header .region.region-header {
   padding-top: 2em;
 }
 
+.address-wrap {
+  background-image: none !important;
+}
+
 /* Front page specific styles. */
 .path-frontpage [class*=region-topwidget-] .term-description {
   min-height: 150px;
+}
+.path-frontpage .address-wrap blockquote {
+  background-color: transparent !important;
 }
 
 /* User account menu */
