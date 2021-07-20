@@ -18,7 +18,11 @@ header.main-header {
   [class*="region-topwidget-"] {
 
     .term-description {
-      min-height: 150px;
+      min-height: 165px;
+
+      .content {
+        padding: .5em 2em 1em !important;
+      }
     }
 
   }
@@ -26,9 +30,6 @@ header.main-header {
   .address-wrap {
     blockquote {
       background-color: transparent !important;
-      &:after {
-        content: '';
-      }
     }
   }
 }
