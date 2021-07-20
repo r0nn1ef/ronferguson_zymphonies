@@ -26,6 +26,9 @@ header.main-header {
   .address-wrap {
     blockquote {
       background-color: transparent !important;
+      &:after {
+        content: '';
+      }
     }
   }
 }
