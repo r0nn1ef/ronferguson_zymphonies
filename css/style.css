@@ -75,13 +75,13 @@ header.main-header .region.region-header {
 
 /* Front page specific styles. */
 .path-frontpage [class*=region-topwidget-] .term-description {
-  min-height: 150px;
+  min-height: 165px;
+}
+.path-frontpage [class*=region-topwidget-] .term-description .content {
+  padding: 0.5em 2em 1em !important;
 }
 .path-frontpage .address-wrap blockquote {
   background-color: transparent !important;
-}
-.path-frontpage .address-wrap blockquote:after {
-  content: "";
 }
 
 /* User account menu */
