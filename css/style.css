@@ -57,6 +57,11 @@ table tr.even {
  */
 .fa-ul > li {
   list-style-type: none;
+  display: inline-block;
+  margin-right: 1.6em;
+}
+.fa-ul > li:last-of-type {
+  margin-right: 0;
 }
 
 .fa-li {
