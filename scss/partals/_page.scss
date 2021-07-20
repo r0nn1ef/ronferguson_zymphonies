@@ -8,3 +8,27 @@ header.main-header {
 
   }
 }
+
+.address-wrap {
+  background-image: none !important;
+}
+
+/* Front page specific styles. */
+.path-frontpage {
+  [class*="region-topwidget-"] {
+
+    .term-description {
+      min-height: 150px;
+    }
+
+  }
+
+  .address-wrap {
+    blockquote {
+      background-color: transparent !important;
+      &:after {
+        content: '';
+      }
+    }
+  }
+}

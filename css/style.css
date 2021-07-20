@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=PT+Sans+Caption:wght@400;700&display=swap");
 /* Override the default body font. */
+@import "../css/icomoon/style.css";
 body, table td {
   font-family: "Crimson Text", serif !important;
 }
@@ -19,7 +20,7 @@ q, blockquote {
   padding: 0.6em 0.3em !important;
   font-size: 2.2em !important;
   line-height: 1.2em !important;
-  border-radius: 0.3em;
+  border-radius: 0.1em;
 }
 q p, blockquote p {
   color: #666;
@@ -66,6 +67,21 @@ table tr.even {
 /* Main header */
 header.main-header .region.region-header {
   padding-top: 2em;
+}
+
+.address-wrap {
+  background-image: none !important;
+}
+
+/* Front page specific styles. */
+.path-frontpage [class*=region-topwidget-] .term-description {
+  min-height: 150px;
+}
+.path-frontpage .address-wrap blockquote {
+  background-color: transparent !important;
+}
+.path-frontpage .address-wrap blockquote:after {
+  content: "";
 }
 
 /* User account menu */
