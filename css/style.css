@@ -80,7 +80,7 @@ header.main-header .region.region-header {
 
 /* Front page specific styles. */
 .path-frontpage [class*=region-topwidget-] .term-description {
-  min-height: 165px;
+  min-height: 208px;
 }
 .path-frontpage [class*=region-topwidget-] .term-description .content {
   padding: 0.5em 2em 1em !important;
